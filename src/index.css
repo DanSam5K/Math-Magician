@@ -1,27 +1,56 @@
-body {
+* {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.magician {
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 600px;
+  margin: 10em auto;
+}
+
+.input-screen {
+  width: 100%;
+  font-size: 2rem;
+  height: 100px;
+  border: none;
+  background-color: #949393;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+}
+
+button {
+  height: 100px;
+  background-color: #fff;
+  border-radius: 1px;
+  border: 1px solid #bdb5b5;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.sign-operator {
+  background-color: #ff8000;
+}
+
+.sign-operator:hover {
+  background-color: #e9a20a;
+  cursor: pointer;
+}
+
+.magician-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.zero {
+  grid-column-start: span 2;
 }
