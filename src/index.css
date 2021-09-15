@@ -23,7 +23,6 @@
   padding-right: 10px;
 }
 
-
 button {
   height: 100px;
   background-color: #fff;
@@ -39,7 +38,7 @@ button:hover {
 }
 
 .sign-operator {
-  background-color: #FF8000;
+  background-color: #ff8000;
 }
 
 .sign-operator:hover {
