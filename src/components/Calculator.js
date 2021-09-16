@@ -1,17 +1,42 @@
 import React from 'react';
+import calculate from '../logic/calculate';
+import MagicBtn from './MagicBtn';
+import OutputResult from './OutputResult';
 
+
+const generateOutputValue= ({total, next, operation}) => {
+  if (!total && !next && !operation) {
+      return '0';
+    }else if (!total && next) {
+      return `${next}`;
+    } else if (operation && total && !next) {
+      return `${total} ${operation}`;
+    } else if (total && next && operation) {
+      return `${total} ${operation} ${next}`;
+    } else {
+      return `${total}`;
+    }
+}
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
+  
+
   render() {
+    const outputValue = generateOutputValue(this.state);
     return (
       <div className="magician">
-        <input type="text" className="input-screen" value="0" disabled />
-        <div className="magician-keys">
-
+        <OutputResult outputvalue={outputValue}/>
+        <div className="magician-keys"> 
+          
+          <input type="text" className="input-screen" value="0" disabled />
           <button type="button" className="all-clear" value="all-clear">AC</button>
           <button type="button" className="plus-minus-sign" value="+/-">+/-</button>
           <button type="button" className="percentage-sign" value="%">%</button>
