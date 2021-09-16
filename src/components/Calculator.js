@@ -39,9 +39,30 @@ class Calculator extends React.Component {
     return (
       <div className="magician">
         <OutputResult outputvalue={outputValue}/>
-        <div className="magician-keys"> 
+        <div className="magician-keys">
+
+          <MagicBtn  value="AC"  clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="+/-" clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="%"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="÷"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="7"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="8"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="9"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="x"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="4"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="5"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="6"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="-"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="1"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="2"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="3"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="+"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="0"   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="."   clickEventListener={this.clickEventListener}/>
+          <MagicBtn  value="="   clickEventListener={this.clickEventListener}/>
           
-          <input type="text" className="input-screen" value="0" disabled />
+          
+          {/* <input type="text" className="input-screen" value="0" disabled />
           <button type="button" className="all-clear" value="all-clear">AC</button>
           <button type="button" className="plus-minus-sign" value="+/-">+/-</button>
           <button type="button" className="percentage-sign" value="%">%</button>
@@ -64,7 +85,7 @@ class Calculator extends React.Component {
 
           <button type="button" value="0" className="zero">0</button>
           <button type="button" className="decimal" value=".">.</button>
-          <button type="button" className="sign-operator" value="=">=</button>
+          <button type="button" className="sign-operator" value="=">=</button> */}
 
         </div>
       </div>
