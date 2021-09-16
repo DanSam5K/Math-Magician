@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const OutputResult = ({ outputvalue }) => <div className="input-screen">{outputvalue}</div>;
 
@@ -8,7 +8,7 @@ OutputResult.propTypes = {
 };
 
 OutputResult.defaultProps = {
-  outputvalue: "",
+  outputvalue: '',
 };
 
 export default OutputResult;
