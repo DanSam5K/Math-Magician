@@ -27,7 +27,12 @@ class Calculator extends React.Component {
     };
   }
 
-  
+  clickEventListener = (event) => {
+    const object = this.state;
+    const value = event.target.value;
+    const result = calculate(object, value);
+    this.setState(result);
+  }
 
   render() {
     const outputValue = generateOutputValue(this.state);
