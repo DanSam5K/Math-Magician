@@ -1,7 +1,8 @@
+// eslint disable no-named-as-default;
 import React from 'react';
-import calculate from '../logic/calculate';
 import MagicBtn from './MagicBtn';
 import OutputResult from './OutputResult';
+import calculate from '../logic/calculate';
 
 const generateOutputValue = ({ total, next, operation }) => {
   if (!total && !next && !operation) {
@@ -18,11 +19,7 @@ const generateOutputValue = ({ total, next, operation }) => {
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
+    this.state = {};
   }
 
   clickEventListener = (event) => {
@@ -34,30 +31,15 @@ class Calculator extends React.Component {
 
   render() {
     const outputValue = generateOutputValue(this.state);
+    const buttonKeys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '1', '='];
+    const buttons = buttonKeys.map((val) => (
+      <MagicBtn value={val} key={0} clickEventListener={this.clickEventListener} />
+    ));
     return (
       <div className="magician">
         <OutputResult outputvalue={outputValue} />
         <div className="magician-keys">
-
-          <MagicBtn value="AC" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="+/-" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="%" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="÷" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="7" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="8" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="9" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="x" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="4" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="5" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="6" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="-" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="1" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="2" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="3" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="+" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="0" clickEventListener={this.clickEventListener} />
-          <MagicBtn value="." clickEventListener={this.clickEventListener} />
-          <MagicBtn value="=" clickEventListener={this.clickEventListener} />
+          {buttons}
         </div>
       </div>
     );
