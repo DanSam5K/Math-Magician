@@ -29,7 +29,7 @@ const Calculator = () => {
   };
 
   const outputValue = generateOutputValue(calculateState);
-  const buttonKeys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '1', '='];
+  const buttonKeys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   const buttons = buttonKeys.map((val) => (
     <MagicBtn value={val} key={0} clickEventListener={clickEventListener} />
   ));
