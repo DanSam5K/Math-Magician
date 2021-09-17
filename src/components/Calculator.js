@@ -1,21 +1,9 @@
-// eslint disable no-named-as-default;
 import React from 'react';
 import MagicBtn from './MagicBtn';
 import OutputResult from './OutputResult';
 import calculate from '../logic/calculate';
+import generateOutputValue from '../helper/generateOutputvalue';
 
-const generateOutputValue = ({ total, next, operation }) => {
-  if (!total && !next && !operation) {
-    return '0';
-  } if (!total && next) {
-    return `${next}`;
-  } if (operation && total && !next) {
-    return `${total} ${operation}`;
-  } if (total && next && operation) {
-    return `${total} ${operation} ${next}`;
-  }
-  return `${total}`;
-};
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
