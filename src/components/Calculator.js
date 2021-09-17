@@ -23,7 +23,7 @@ const Calculator = () => {
       next = setState(calculateState.next);
     }
     if (operation === undefined) {
-      operation = setState(calculateState.operation);
+      operation = calculateState.operation;
     }
     calculateStateHandler({ total, next, operation });
   };
