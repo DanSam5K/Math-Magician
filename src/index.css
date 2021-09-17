@@ -74,7 +74,7 @@ button:hover {
 }
 
 .footer > ul > li {
-  font-family: "cursive";
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +105,7 @@ button:hover {
   font-size: 20px;
   max-width: 500px;
   margin: 10em auto;
-  font-family: "cursive";
+  font-family: cursive;
 }
 
 .link {
