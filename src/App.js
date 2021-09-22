@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Home from './components/Home';
 import Quote from './components/Quote';
@@ -19,7 +20,7 @@ class App extends React.Component {
     const { total, next, operation } = this.state;
     const object = { total, next, operation };
     return (
-      <>
+      <Router>
         <Header />
         <div className="Section">
           <Switch>
@@ -35,7 +36,7 @@ class App extends React.Component {
           </Switch>
         </div>
         <Footer />
-      </>
+      </Router>
     );
   }
 }
