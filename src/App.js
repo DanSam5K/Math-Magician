@@ -27,9 +27,6 @@ class App extends React.Component {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/Home">
-              <Home />
-            </Route>
             <Route path="/Calculator">
               <Calculator object={object} />
             </Route>
