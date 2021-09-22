@@ -24,7 +24,7 @@ class App extends React.Component {
         <Header />
         <div className="Section">
           <Switch>
-            <Route exact path="/Home">
+            <Route exact path="/">
               <Home />
             </Route>
             <Route path="/Calculator">
