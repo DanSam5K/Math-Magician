@@ -24,7 +24,9 @@ test("Plus sign should add number", () => {
    expect(calculate({total: '5', next: '5', operation: '+'}, '=')).toStrictEqual({total: '10', next: null, operation: null});
 })
 
-
+test("Minus sign should subtract number", () => {
+   expect(calculate({total: '10', next: '5', operation: '-'}, '=')).toStrictEqual({total: '5', next: null, operation: null});
+})
 
 
 
