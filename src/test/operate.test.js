@@ -8,4 +8,8 @@ describe('operate', () => {
   it('should return the difference of two numbers', () => {
     expect(operate('1', '2', '-')).toBe('-1');
   });
+
+  it('should return the product of two numbers', () => {
+    expect(operate('7', '2', 'x')).toBe('14');
+  });
 });
