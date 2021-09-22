@@ -16,6 +16,11 @@ test("No operator and next value should return empty output", () => {
    expect(calculate({total: '5', next: null, operation: '÷'}, '=')).toStrictEqual({});
 })
 
+test("+/- sign should return null when no total or next value", () => {
+   expect(calculate({total: null, next: null, operation: '÷'}, '+/-')).toStrictEqual({});
+})
+
+
 
 
 
