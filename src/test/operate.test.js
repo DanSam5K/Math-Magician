@@ -16,4 +16,8 @@ describe('operate', () => {
   it('should return the quotient of two numbers', () => {
     expect(operate('7', '2', '÷')).toBe('3.5');
   });
+
+  it('division by 0 should return an error', () => {
+    expect(operate('5', '0', '÷')).toBe("Can't divide by 0.");
+  });
 });
