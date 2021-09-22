@@ -7,7 +7,7 @@ const Header = () => (
     <nav className="Nav">
       <ul className="flex">
         <li className="link">
-          <Link className="link" to="/Home">Home</Link>
+          <Link className="link" to="/">Home</Link>
         </li>
         <li className="link">
           <Link className="link" to="/Calculator">Calculator</Link>
