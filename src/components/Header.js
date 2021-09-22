@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <div className="container">
@@ -6,10 +7,10 @@ const Header = () => (
     <nav className="Nav">
       <ul className="flex">
         <li className="link">
-          {/* <Link className="link" to="/Home">Home</Link> */}
+          <Link className="link" to="/Home">Home</Link>
         </li>
         <li className="link">
-          {/* <Link className="link" to="/Calculator">Calculator</Link> */}
+          <Link className="link" to="/Calculator">Calculator</Link>
         </li>
         <li className="link">
           <Link className="link" to="/Quote">Quote</Link>
