@@ -16,10 +16,12 @@
 - CSS
 - Visual Studio Code
 - Git & Github
+- Heroku
+- Netlify
 ## Deployment Live Demo
 
-<!-- - Deployed with gh-pages
-[Live Demo](https://dansam5k.github.io/LeaderBoard-APIS/) -->
+- [Live Demo On Heroku](https://dansam-math-magician.herokuapp.com/)
+- [Live Demo On Netlify](https://objective-hopper-31e2ea.netlify.app/)
 ### Prerequisites
 
 - IDE to edit and run the code (We use Visual Studio Code 🔥).
