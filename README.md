@@ -21,7 +21,7 @@
 ## Deployment Live Demo
 
 - [Live Demo On Heroku](https://dansam-math-magician.herokuapp.com/)
-- [Live Demo On Netlify](https://objective-hopper-31e2ea.netlify.app/)
+- [Live Demo On Netlify](https://dansmart-calculator.netlify.app/)
 ### Prerequisites
 
 - IDE to edit and run the code (We use Visual Studio Code 🔥).
